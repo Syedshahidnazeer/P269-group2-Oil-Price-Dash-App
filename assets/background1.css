@@ -1,0 +1,32 @@
+@keyframes changeColor {
+  0% {
+    background-color: #FF5733;
+    background-image: linear-gradient(to bottom, #FF5733, #FFA500);
+  }
+  25% {
+    background-color: #33FF57;
+    background-image: linear-gradient(to bottom, #33FF57, #33FFBB);
+  }
+  50% {
+    background-color: #5733FF;
+    background-image: linear-gradient(to bottom, #5733FF, #7B68EE);
+  }
+  75% {
+    background-color: #FF3357;
+    background-image: linear-gradient(to bottom, #FF3357, #FF69B4);
+  }
+  100% {
+    background-color: #33FFBB;
+    background-image: linear-gradient(to bottom, #33FFBB, #00CED1);
+  }
+}
+
+.dynamic-background {
+  animation: changeColor 10s infinite alternate;
+  background-size: cover;
+  background-position: center;
+}
+
+.portrait-effect {
+  filter: grayscale(0.5);
+}
